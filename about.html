@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <title> Portfolio </title>
+    <head>    
+        <link rel="stylesheet" href="css/about.css">
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+            </style>
+    </head>
+    <body>
+        <!---slide Menu-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="file:///Users/tarafarzin/Downloads/portfolio/github%20hw%2018%20repo/github%20UX_UI_HW_18/about.html">About</a>
+        <a href="#">Resume</a>
+        <a href="file:///Users/tarafarzin/Downloads/portfolio/github%20hw%2018%20repo/github%20UX_UI_HW_18/index.html#work-block">My Work</a>
+        <a href="file:///Users/tarafarzin/Downloads/portfolio/github%20hw%2018%20repo/github%20UX_UI_HW_18/index.html#contact">Contact</a>
+    </div>
+    <!---slide Menu-->
+    
+        <section class="page-container">
+            <header>
+                <div class= "hamburger-menu-icon"> 
+                    <img onclick="showNav()" src="images/squig-2.PNG">
+                </div>
+                <div id="homepage" class="home">
+                    <a href="file:///Users/tarafarzin/Downloads/portfolio/github%20hw%2018%20repo/github%20UX_UI_HW_18/index.html"><img onClick="goHome()" src="images/home.png"></a>
+                </div>
+            </header>
+            
+            <div class="intro"> 
+                <div class="collage">
+                    <img src="images/collage-2.PNG">
+                </div>
+                <br>
+                <div class="nice">
+                    <p class="nice">
+                        Nice to meet you! I'm Tara.
+                    </p>
+                    <div class="about">
+                        <p>
+                            I'm an Iranian American visual designer living in San Diego, California, currently studying to complete a Bachelor of Arts in Psychology at the University of California Riverside. 
+                            <br>
+                            I design for an intuitive user experience, with organic minimalist design touches.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function showNav() {
+                var element= document.getElementById("mySidenav");
+                element.classList.add("show-nav");
+            }
+            function closeNav() {
+                var element= document.getElementById("mySidenav");
+                element.classList.remove("show-nav");
+            }
+            
+        </script>
+</body>
+
+<footer> 
+    <div class="footer-content"> 
+        <p class="footer-text"> Get In Contact! </p>
+        <div class="logoz-wrapper">
+            <img src="images/ig.png">
+            <img src="images/email.png">
+            <img src="images/linkdin2.png">
+        </div>
+    </div>
+    <p class="footer-copyRight"> 2021 Tara Farzin | Designed in VS Code </p>            
+</footer>
+</html>

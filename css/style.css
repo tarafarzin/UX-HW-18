@@ -1,0 +1,292 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6FFF8;
+    scroll-behavior: smooth;
+}
+a , p , span {
+    font-family: "Poiret One";
+    transition: width 1s ease;
+  -webkit-transition: width .2s ease;
+    text-decoration: none;
+    color: #6B9080;
+}
+
+header{
+    height: 60px;
+}
+
+.hamburger-menu-icon {
+    background-color: #F6FFF8;
+    width: 100%;
+}
+.hamburger-menu-icon img{
+    float: right;
+    width: 70px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.stickers img {
+    opacity: 0.9;
+}
+
+.self-bio {
+    background-color: #F6FFF8;
+    margin: 0px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.sunflower-tilty1 img{
+    height: 80px;
+    position: absolute;
+    right: 120px;
+    top: 250px;
+}
+.sunflower-tilty2 img{
+    height: 80px;
+    position: absolute;
+    left: 120px;
+    top: 600px;
+}
+
+.avo-flippy1 img{
+    height: 50px;
+    position: absolute;
+    left: 200px;
+    top: 190px;
+}
+.avo-flippy2 img{
+    height: 50px;
+    position: absolute;
+    right: 320px;
+    top: 640px;
+}
+
+.wavy1 img{
+    height: 70px;
+    position: absolute;
+    left: 540px;
+    top: 650px;
+}
+.wavy2 img{
+    height: 70px;
+    position: absolute;
+    right: 490px;
+    top: 90px;
+}
+
+.self-bio .hey-you {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-bio p{
+    padding: 0px 8px;
+    position: relative;
+    z-index: 2;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    width: 700px;
+    font-family: 'Poiret One', cursive;
+    font-size: 45pt;
+    font-weight: 1000;
+}
+.my-work-columns {
+    width: 50%;
+    background-color: #F6FFF8;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 28pt;
+    letter-spacing: 4px;
+}
+
+.my-work-columns.my-work-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-work-columns.my-work-img {
+    padding: 24px;
+}
+
+.my-work-img img{
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.my-work {
+    margin: 0px auto 70px auto;
+    display: flex;
+}
+.my-work p{
+    margin: 60px auto 
+}
+
+
+
+footer .footer-content {
+    background-color: #6B9080;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content .footer-text {
+    font-size: 30px;
+    font-family: "Poiret One";
+    font-weight: 600;
+    color: #F6FFF8;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 4px;
+}
+
+.footer-content .logoz-wrapper img {
+    width: 50px;
+}
+
+footer {
+    text-align:center;
+}
+
+footer .footer-content .logoz-wrapper {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p.footer-copyRight {
+    padding-bottom: 3px;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #F6FFF8;
+    background-color: #6B9080;
+}
+
+.sidenav a {
+    font-weight: bold;
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F6FFF8;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: #A4C3B2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a:hover {
+    color: #6B9080;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 85px;
+    margin-left: 50px;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1100px) { 
+
+    .stickers img {
+    display: none;}   
+}
+
+
+@media screen and (min-width: 451px) {    
+.show-nav{
+  width:400px;
+    }
+    }
+
+
+@media screen and (max-width: 640px) {
+    
+ .my-work {
+    display: inline-block;
+}       
+   
+.my-work-columns {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    
+.show-nav{
+  width:100%;
+    }
+    
+.self-bio p{
+    font-size: 35pt;
+}    
+
+    
+    }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+   
+
+
+.hamburger-menu-icon img:hover {
+      transform: rotate(-15deg);
+      transition:transform 0.5s;
+  }
+
+
+.work-title {
+    position: relative;
+    font-weight: bold;
+}
+
+a.work-title.Hogar-Infantil {
+    width: auto;
+}
+
+
+.work-title:after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #6B9080;
+    transition: width 1s ease;
+    -webkit-transition: width .7s ease;
+}
+
+ .work-title:hover:after{
+    width: 100%;
+    left: 0;
+    background: #6B9080;
+}
+
+
+

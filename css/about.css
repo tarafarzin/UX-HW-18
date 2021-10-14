@@ -1,0 +1,209 @@
+html,body {
+    background-color: #F6FFF8;
+    font-family: 'Poiret One', cursive;
+    overflow-x: hidden;
+}
+
+.hamburger-menu-icon {
+    background-color: #F6FFF8;
+    width: 100%;
+}
+.hamburger-menu-icon img{
+    float: right;
+    width: 70px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.hamburger-menu-icon img:hover {
+    transform: rotate(-15deg);
+    transition:transform 0.5s;
+}
+
+.home {
+    width: 95px;
+    height: 95px;
+}
+.home img {
+    height: 45px;
+    width: 45px;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.intro {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nice {
+    width: 100%;
+    height: 100%;
+}
+
+.nice p {
+    margin-top: 50px;
+    font-size: 35pt;
+    font-weight: bold;
+    color: #6B9080;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about p {
+    font-size: 20pt;
+}
+
+.collage img{
+    width: 100%;
+    position: relative;
+    
+    max-width: 1300px;
+}
+
+.collage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sidenav a {
+    font-weight: bold;
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F6FFF8;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: #A4C3B2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a:hover {
+    color: #6B9080;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 85px;
+    margin-left: 50px;
+    padding: 0;
+}
+
+
+footer .footer-content {
+    background-color: #6B9080;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content .footer-text {
+    font-size: 30px;
+    font-family: "Poiret One";
+    font-weight: 600;
+    color: #F6FFF8;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 4px;
+}
+
+.footer-content .logoz-wrapper img {
+    width: 50px;
+}
+
+footer {
+    text-align: center;
+    outline: none;
+}
+
+footer .footer-content .logoz-wrapper {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p.footer-copyRight {
+    padding-bottom: 3px;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #F6FFF8;
+    background-color: #6B9080;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .nice p {
+       width: 100%;
+       display: inline-block;
+       position: absolute;
+       
+   }       
+}
+@media screen and (max-width: 1000px) {
+    
+    .nice {
+       width: 100%;
+       position: absolute;
+       display: grid;
+       grid-template: 1fr / 1fr;
+       place-items: center;
+   }       
+}
+@media screen and (max-width: 1000px) {
+    
+    .intro {
+       flex-direction: column;
+       
+   }       
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .nice p {
+        font-size: 30pt;
+    }
+}
+@media screen and (max-width: 1200px) {
+    
+    .about p {
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media screen and (min-width: 451px) {    
+    .show-nav{
+      width:400px;
+        }
+        }
+
+@media screen and (max-width: 450px) {
+    
+            .show-nav{
+              width:100%;
+                }
+            }

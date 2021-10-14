@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <title> Portfolio </title>
+    <head>    
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+        </style>
+    </head>
+    <body>   
+    <!---slide Menu-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="file:///Users/tarafarzin/Downloads/portfolio/github%20hw%2018%20repo/github%20UX_UI_HW_18/about.html">About</a>
+        <a href="#">Resume</a>
+        <a href="#work-block">My Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <!---slide Menu-->
+
+        <section class="page-container">
+            <div class="self-bio">
+                <header> 
+                    <div class="hamburger-menu-icon"> 
+                        <img onclick="showNav()" src="images/squig-2.PNG">
+                    </div>
+                </header> 
+                <div class="stickers"> 
+                    <div class="sunflower-tilty1">
+                        <img src="images/sun-tilty.gif">
+                    </div>
+                    <div class="sunflower-tilty2">
+                        <img src="images/sun-tilty.gif">
+                    </div>
+                    <div class="avo-flippy1">
+                        <img src="images/avo-flippy.gif">
+                    </div>
+                    <div class="avo-flippy2">
+                        <img src="images/avo-flippy.gif">
+                    </div>
+                    <div class="wavy1">
+                        <img src="images/wavy.gif">
+                    </div>
+                    <div class="wavy2">
+                        <img src="images/wavy.gif">
+                    </div>
+                </div>
+                <div class="hey-you">
+                <p>
+                    Hey you! My name is Tara Farzin and I'm a UX&UI designer.
+                </p>
+                </div>
+            </div>
+            <div class="my-work" id="work-block">
+                <div class="my-work-columns my-work-title">
+                    <a href="#" class="work-title mall-miles">
+                        Mall Miles
+                    </a>
+                </div>
+                <div class="my-work-columns my-work-img">
+                    <img src="images/miles-2.PNG">                   
+                </div>
+            </div>
+            <div class="my-work">
+                <div class= "my-work-columns my-work-title">
+                    <a href="#" class="work-title Hogar-Infantil"> 
+                        Hogar Infantil La Gloria
+                    </a>
+                </div>
+                <div class= "my-work-columns my-work-img">
+                    <img src="images/hogar-2.PNG"> 
+                </div>
+            </div>
+            <div class= "my-work last-work">
+                <div class="my-work-columns my-work-title last-work-columns last-work-title">
+                    <a href="#" class="work-title project-3"> 
+                        Project 3
+                    </a>
+                </div>
+                <div class="my-work-columns my-work-img last-work-columns last-work-img"></div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function showNav() {
+                var element= document.getElementById("mySidenav");
+                element.classList.add("show-nav");
+            }
+            function closeNav() {
+                var element= document.getElementById("mySidenav");
+                element.classList.remove("show-nav");
+            }
+        </script>
+        
+    </body>
+    <footer> 
+            <div class="footer-content" id="contact"> 
+                <p class="footer-text"> Get In Contact! </p>
+                <div class="logoz-wrapper">
+                    <img src="images/ig.png">
+                    <img src="images/email.png">
+                    <img src="images/linkdin2.png">
+                </div>
+            </div>
+            <p class="footer-copyRight"> 2021 Tara Farzin | Designed in VS Code </p>            
+        </footer>
+</html>
